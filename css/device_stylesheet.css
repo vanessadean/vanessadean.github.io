@@ -1,132 +1,67 @@
 /********** Device Styles **********/
 
-/**
- * Tablet Landscape
- */
-
-@media only screen and (max-width: 960px) {
-
-	.wrapper {
-		width: 90%;
-	}
-
-}
-
-/**
- * Tablet Portrait
- */
-
-@media only screen and (max-width: 880px) {
-
-	figure {
-    	margin: 10px 0 25px 55px;
-    	height: 150px;
-	}
-
-	.wrapper {
-		width: 90%;
-	}
-
-	.col1_left, .col1_mid {
-		width: 42%;
-	} 
-
-	.col1_mid {
-		margin: 0 0 0 8%;
-	} 
-
-	.col1_right {
-		display: none;
-	}
-
-	.col2_right {
-		width: 55%;
-		margin: 0 0 20px 2%;
-	}
-
-}
-
 @media only screen and (max-width: 720px) {
 
-	.title {
-		padding: 85px 0 0 25px;
-		font-size: 16px;
-		line-height: 28px;
-	}
+        .project {
+            border: 5px solid white;
+            height: 150px;
+            margin-left: 50px;
+        }
 
-	p {
-    	margin: 20px 0 0 25px;
-	}
+        img {
+            height: 100px;
+            display: inline-block;
+            margin-bottom: -5px;
+        }   
 
-	figure {
-    	margin: 10px 0 0 25px;
-    	height: 100px;
-	}
+        h1 {
+            font-size: 40px;
+            margin: 15px 50px;
+        }
 
-	.linked {
-    	margin: 5px 0 0 25px;
-	}
+        h2 {
+            font-size: 16px;
+            padding-top: 15px;
+        }
 
-	.wrapper {
-		width: 90%;
-	}
+        #whee, #drag {
+        	color: rgba(0,0,0,0);
+        }
 
-	.col2_right, .col1_left, .col1_mid  {
-		float: none;
-		width: 100%;
-		margin: 0 0 20px;
-	}
+        header {
+        	height: 75px;
+        }
 
-	.col1_left, .col1_mid {
-		clear: both;
-	} 
-
+        body {
+            background-size: 800px;
+        }
 }
 
 /*
  * Smartphone Landscape
  */
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 560px){ 
 
-	.wrapper {
-		width: 90%;
-	} 
+        .project {
+            border: 5px solid white;
+            width: 200px;
+            margin-left: 25px;
+            overflow: hidden;
+        }
 
-	.left, .right {
-		float: none;
-		width: 100%;
-	}
+        h1 {
+            font-size: 25px;
+            margin: 15px 25px;
+        }
 
-	nav {
-		margin-bottom: 10px;
-	}
+        h2 {
+			font-size: 14px;
+        }
 
-	nav a {
-		width: 125px;
-		margin-left: 25px;
-		margin-right: 0;
-	}
-
-	section {
-  	  	margin: 5px auto;
-	}
-
-	figcaption {
-		font-size: 0.6em;
-		line-height: 1em;
-	}
-
-	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right, .col3 {
-		float: none;
-		width: 100%;
-		margin: 0 0 20px;
-	} 
-
-	.col3_image {
-		height: 250px;
-		max-width: 400px;
-	}
+        header {
+        	height: 50px;
+        }
 
 }
 
@@ -136,62 +71,6 @@
 
 @media only screen and (max-width: 400px) {
 	
-	.wrapper {
-		width: 90%;
-	} 
-
-	.title {
-		padding: 65px 0 0 25px;
-		width: 50%;
-		font-size: 16px;
-		line-height: 28px;
-	}
-
-	figure {
-    	margin: 20px 0 0 25px;
-	}
-
-	nav {
-		width: 100%;
-		margin: 5px 0 15px 0;
-		border-bottom: 0px;
-	}
-
-	nav a {
-		text-align: center;
-		border-bottom: 1px solid #ccc;
-		padding: 5px 0;
-		width: 100%;
-		margin-left: 0;
-	}
-
-	figcaption {
-		font-size: 0.6em;
-		line-height: 1em;
-	}
-
-	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right {
-		float: none;
-		width: 100%;
-		margin: 0 0 20px;
-	} 
-
-	.col3_image {
-		height: 200px;
-		min-width: 300px;
-	}
-
-	h2 {
-		font-size: 1.2em;
-	}
-
-	h3 {
-		font-size: 1em;
-	}
-
-	.hider {
-		display: none;
-	}
 
 }
 
