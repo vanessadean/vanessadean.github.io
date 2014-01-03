@@ -7,75 +7,55 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css"/>
 	<link rel="stylesheet" href="css/device_stylesheet.css"/>
+    <link rel="stylesheet" href="css/social_foundicons_ie7.css"/>
+    <link rel="stylesheet" href="css/social_foundicons.css"/>
+    <script src="js/modernizr.js"></script>
 	<!--[if lt IE 9]!>
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![end if]-->
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	
 	<title>Vanessa Dean</title>
 </head>
 
 <body>
+
+<div class="wrapper">
 <header>
-<h1>this is vanessa</h1>
-
-<!--/////////// Social Bar 
-       
-<div id="social">
-    <a class="fbook" href="#" target="_blank" title="facebook">Facebook</a>
-    <a class="twitt" href="#" target="_blank" title="twitter">Twitter</a>
-    <a class="gplus" href="#" target="_blank" title="google plus">Google Plus</a>
-</div>
-
-//////////-->
-       
+<h1>this is Vanessa</h1>
 </header>
 
-<div class="clearfix">
-    <div id="me">
-    <a href="http://www.thisisvanessa.com/traveling-van/">
-        <div class='project'>
-            <img src="http://www.thisisvanessa.com/images/traveling-van-3.jpg">
-            <h2>my latest project</h2>
-        </div>
-        <div id="whee" class="hidden">Wheeeeeee!</div>
-        <div id="drag" class="hidden">Drag me<br>around!</div>
-    </a>
-    </div>
+<!--/////////// Social Bar //////////-->
+<div id="social">
+
+    <a href="http://www.linkedin.com/in/vanessaodettedean/" target="_blank" title="linkedin"><i class="foundicon-linkedin"></i></a>
+    <a href="http://twitter.com/astrosprout" target="_blank" title="twitter"><i class="foundicon-twitter"></i></a>
+    <a href="http://plus.google.com/117721396510765433314/posts/p/pub" target="_blank" title="google plus"><i class="foundicon-google-plus"></i></a>
+    <a href="http://github.com/vanessadean" target="_blank" title="github"><i class="foundicon-github"></i></a>
 
 </div>
+<!--/////////// Ends Social Bar //////////-->
 
+
+<a href="#"><div class='project'>
+    <img src="images/hey-kate.png">
+    <h2>my latest project</h2>
+</div></a>
+
+<a href="http://www.thisisvanessa.com/traveling-van/"><div class='project'>
+    <img src="images/traveling-van.png">
+    <h2>another project</h2>
+</div></a>
+
+<div class="project" id="contact">
+    <h2>tell me something good</h2>
+        <form method="post" action="mailer.php">
+                <textarea rows="1" name="message" placeholder="message" ></textarea>
+                <input type="submit" value="send">
+        </form>
+</div>
+
+</div>
 </body>
-
-
-<script>
-$(function() {
-$( "#me" ).draggable();
-});
-</script>
-
-<script>
-$(document).ready(function() {
-
-     $('.project').mouseenter(function() {
-        $('#drag').toggleClass('hidden');
-    });
-
-    $('.project').mousedown(function() {
-        $('#drag').toggleClass('hidden');
-    });
-
-    $('.project').mousedown(function() {
-        $('#whee').toggleClass('hidden');
-    });
-
-    $('.project').mouseleave(function() {
-        $('#whee').toggleClass('hidden');
-    });
-
-});
-</script>
 
 </html>

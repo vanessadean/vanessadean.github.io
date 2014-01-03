@@ -1,69 +1,51 @@
-/* fixes */
+@import url(http://fonts.googleapis.com/css?family=Pompiere);
 
-*	{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+/********** Social Bar **********/
+
+*   {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	height: 0;
-	line-height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
 }
 
-		#me {
-            height: 200px;
-            min-width: 400px;
-            display: inline-block;
-            float: left;
+/********** Styles **********/
+
+        .wrapper {
+            max-width: 1050px;
         }
-        #drag {
-            border: none;
-            height: 200px;
-            width: 75px;
-            display: inline-block;
-            background: none;
-            color: orange;
-            font: bold 20px arial, helvetica;
-            float: left;
-            text-align: left;
-            margin: 50px 0 0 -75px;
-        }
-        #whee {
-            border: none;
-            height: 200px;
-            width: 75px;
-            display: inline-block;
-            background: none;
-            color: orange;
-            font: bold 30px arial, helvetica;
-            float: left;
-            margin-left: 25px;
-        }
+
         body {
-            background: url("https://scontent-a.xx.fbcdn.net/hphotos-ash2/420067_10100972638725999_1443968034_n.jpg");
+            background: url(../images/obidos.png);
             font: sans-serif, helvetica;
             background-size: cover;
             background-repeat: repeat-n;
         }
         h1 {
-            font: bold 50px arial, helvetica;
+            font-size: 70px;
             color: orange;
             text-align: left;
-            margin: 25px 50px;
+            margin: 35px 50px;
+            font-family: Pompiere, serif;
         }
         h2 {
-            font: bold 20px arial, helvetica;
-            color: gray;
+            font-size: 26px;
+            color: #666;
             text-align: center;
-            padding-top: 20px;
+            font-family: Pompiere, serif;
+            padding-top: 10px;
+            padding-bottom: 5px;
         }
         .hidden {
             visibility:hidden;
@@ -72,46 +54,78 @@
             border: 10px solid white;
             display: inline-block;
             float: left;
-            height: 225px;
             margin-left: 50px;
+            margin-bottom: 35px;
             background: white;
             box-shadow: 0px 0px 15px #888888;
-            max-width: 500px;
         }
+
         img {
             height: 150px;
             display: inline-block;
-            margin-bottom: -5px;
+            margin-bottom: 5px;
         }   
         header {
-            height: 100px;
+            height: 110px;
         }
-
-
+        #contact {
+            margin-top: 10px;
+            min-width: 60%;
+            height: 115px;
+            border: 0;
+        }
+        #contact h2 {
+            text-align: left;
+            padding-left: 10px;
+            padding-bottom: 0;
+        }
 
 /********** Social Bar **********/
 
+
 #social {
-	position: fixed;
-	top: 200px;
-	right: 3px;
-	width: 40px;
-	z-index: 1;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    width: auto;
+    z-index: 1;
 }
 
-	a.linkedin {
-		display: block;
-		width: 40px;
-		height: 40px;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-		background: url(../images/social-icons.png) no-repeat;
-	}
+i {
+    font-size: 35px;
+    margin: 5px;
+}
 
-	a.linkedin { background-position: 0 0; }
-	a.linkedin:hover { background-position: -40px 0; }
-	a.linkedin:active { background-position: -80px 0; }
+a {
+    color: #666;
+    text-decoration: none;
+}
 
+/********** Form **********/
+
+input, textarea {
+    display: inline-block;
+    width: 65%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 5px #ccc;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    margin-left: 15px;
+    width: 75px;
+    background: #666;
+    color: white;
+    border-radius: 25px;
+    border: 0;
+}
+
+form {
+    font-family: Pompiere, serif;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #666;
+}
 
 

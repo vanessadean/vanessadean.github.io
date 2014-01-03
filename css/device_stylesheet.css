@@ -1,6 +1,25 @@
 /********** Device Styles **********/
+@media only screen and (max-width: 1050px) {
 
-@media only screen and (max-width: 720px) {
+        #social {
+            position: fixed;
+            top: 50px;
+            width: 40px;
+            z-index: 1;
+        }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+        body {
+            background-size: 800px;
+        }
+
+        header {
+            height: 90px;
+            margin-bottom: 0;
+        }
 
         .project {
             border: 5px solid white;
@@ -10,67 +29,50 @@
 
         img {
             height: 100px;
-            display: inline-block;
-            margin-bottom: -5px;
         }   
 
         h1 {
-            font-size: 40px;
-            margin: 15px 50px;
+            font-size: 50px;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 22px;
             padding-top: 15px;
+            line-height: .5em;
         }
 
-        #whee, #drag {
-        	color: rgba(0,0,0,0);
+        #contact {
+            height: 0;
         }
 
-        header {
-        	height: 75px;
+        #contact form {
+            display: none;
+        }
+            
+        #contact h2 {
+            display: none;
         }
 
-        body {
-            background-size: 800px;
+        i {
+            font-size: 30px;
         }
-}
-
-/*
- * Smartphone Landscape
- */
-
-@media only screen and (max-width: 560px){ 
-
-        .project {
-            border: 5px solid white;
-            width: 200px;
-            margin-left: 25px;
-            overflow: hidden;
-        }
-
-        h1 {
-            font-size: 25px;
-            margin: 15px 25px;
-        }
-
-        h2 {
-			font-size: 14px;
-        }
-
-        header {
-        	height: 50px;
-        }
-
 }
 
 /**
- * Smartphone Portrait
+ * Smartphone Landscape: 480px
  */
+@media only screen and (max-width: 480px) {
 
-@media only screen and (max-width: 400px) {
-	
+        #social {
+            top: 500px;
+            width: auto;
+            left: 50px;
+        }
+
+        i {
+            color: white;
+        }
+
 
 }
 
