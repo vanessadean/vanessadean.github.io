@@ -12,13 +12,8 @@
 
 @media only screen and (max-width: 660px) {
 
-        body {
-            background-size: 800px;
-        }
-
         header {
             height: 90px;
-
         }
 
         .project {
@@ -42,6 +37,9 @@
 
         i {
             font-size: 30px;
+        }
+        #contact {
+            height: 80px;
         }
 }
 

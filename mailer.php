@@ -10,26 +10,18 @@
 	$sendTo		=	'vanessa.dean@gmail.com';
 
 	// Set email subject (appears as subject)
-	$subject 	= 	'Traveling Van - Contact Form Submission';
+	$subject 	= 	'thisisvanessa - Contact Form Submission';
 
 	/* No need to touch the code below this line! */
 
 	// get posted form values
-	$name 		= 	$_POST['name'];
-	$email 		= 	$_POST['email'];
 	$message 	= 	$_POST['message'];
 
-	// setup email header
-	$header 	= 	"From: ".$email;
-
 	// construct email body 
-	$body 		=	"Name: ".$name."\r\n".
-					"Email: ".$email."\r\n".
-					"\r\n".
-					"Message: ".$message;
+	$body 		=	"Message: ".$message;
 
 		// send email
-		mail($sendTo, $subject, $body, $header);
+		mail($sendTo, $subject, $body);
 		
 		//go to success page
 		header('Location: contact.html');

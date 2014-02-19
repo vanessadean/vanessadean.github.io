@@ -27,7 +27,7 @@
         }
 
         body {
-            background: url(../images/obidos.jpg);
+            background: url(../images/obidos-2.jpg);
             font: sans-serif, helvetica;
             background-size: cover;
             background-repeat: repeat-n;
@@ -68,9 +68,8 @@
             height: 110px;
         }
         #contact {
-            margin-top: 10px;
             min-width: 60%;
-            height: 100px;
+            height: 110px;
             border: 0;
         }
         #contact h2 {
