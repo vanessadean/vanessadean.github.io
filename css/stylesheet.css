@@ -20,10 +20,11 @@
     line-height: 0;
 }
 
-/********** Styles **********/
+/********** Styles *********r;*/
+
 
         .wrapper {
-            max-width: 1050px;
+            max-width: 1500px;
         }
 
         body {
@@ -34,7 +35,7 @@
         }
         h1 {
             font-size: 70px;
-            color: orange;
+            color: #666;
             text-align: left;
             margin: 35px 50px;
             font-family: Pompiere, serif;
@@ -51,7 +52,7 @@
             visibility:hidden;
         }
         .project {
-            border: 10px solid white;
+            border: 7px solid white;
             display: inline-block;
             float: left;
             margin-left: 50px;
@@ -59,16 +60,15 @@
             background: white;
             box-shadow: 0px 0px 15px #888888;
         }
-
         img {
-            height: 150px;
+            height: 125px;
             display: inline-block;
         }   
         header {
             height: 110px;
         }
         #contact {
-            min-width: 60%;
+            min-width: 40%;
             height: 110px;
             border: 0;
         }
@@ -107,6 +107,7 @@ input, textarea {
     margin-bottom: 10px;
     box-shadow: 0 3px 5px #ccc;
     border: 1px solid #ccc;
+    color: #666;
 }
 
 input[type="submit"] {
@@ -127,5 +128,11 @@ form {
 
 .thanks {
     margin: 20px;
+}
+
+#dynamite > img {
+    padding-left: 70px; 
+    padding-right: 70px; 
+    background-color: black
 }
 

@@ -18,7 +18,7 @@
 	$message 	= 	$_POST['message'];
 
 	// construct email body 
-	$body 		=	"Message: ".$message;
+	$body 		=	$message;
 
 		// send email
 		mail($sendTo, $subject, $body);

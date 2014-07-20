@@ -1,5 +1,5 @@
 /********** Device Styles **********/
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 900px) {
 
         #social {
             position: fixed;
@@ -27,6 +27,12 @@
             margin-bottom: 0;
         }   
 
+        #dynamite > img {
+            padding-left: 55px; 
+            padding-right: 55px; 
+            background-color: black
+        }
+
         h1 {
             font-size: 50px;
         }
@@ -39,7 +45,7 @@
             font-size: 30px;
         }
         #contact {
-            height: 80px;
+            height: 100px;
         }
 }
 
@@ -85,10 +91,11 @@
     .project {
         margin-left: 25px;
         height: 125px;
+        margin-bottom: 15px;
     }
 
     header {
-        height: 75px;
+        height: 60px;
         margin-bottom: 0;
     }
 
@@ -100,6 +107,12 @@
     img {
         height: 80px;
     }   
+
+    #dynamite > img {
+        padding-left: 45px; 
+        padding-right: 45px; 
+        background-color: black
+    }
 
     #social {
         left: 25px;
