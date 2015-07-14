@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Pompiere);
+@import url(http://fonts.googleapis.com/css?family=BenchNine);
+@import url(http://fonts.googleapis.com/css?family=BenchNine);
 
 /********** Social Bar **********/
 
@@ -23,116 +24,227 @@
 /********** Styles *********r;*/
 
 
-        .wrapper {
-            max-width: 1500px;
-        }
+.wrapper {
+  max-width: 1500px;
+}
 
-        body {
-            background: url(../images/obidos-2.jpg);
-            font: sans-serif, helvetica;
-            background-size: cover;
-            background-repeat: repeat-n;
-        }
-        h1 {
-            font-size: 70px;
-            color: #666;
-            text-align: left;
-            margin: 35px 50px;
-            font-family: Pompiere, serif;
-        }
-        h2 {
-            font-size: 26px;
-            color: #666;
-            text-align: center;
-            font-family: Pompiere, serif;
-            padding-top: 10px;
-            padding-bottom: 5px;
-        }
-        .hidden {
-            visibility:hidden;
-        }
-        .project {
-            border: 7px solid white;
-            display: inline-block;
-            float: left;
-            margin-left: 50px;
-            margin-bottom: 35px;
-            background: white;
-            box-shadow: 0px 0px 15px #888888;
-        }
-        img {
-            height: 125px;
-            display: inline-block;
-        }   
-        header {
-            height: 110px;
-        }
-        #contact {
-            min-width: 40%;
-            height: 110px;
-            border: 0;
-        }
-        #contact h2 {
-            text-align: left;
-            padding-left: 10px;
-        }
+body {
+  font: sans-serif, helvetica;
+  background-size: cover;
+  background-repeat: repeat-n;
+}
+h1 {
+  font-size: 70px;
+  color: #666;
+  text-align: left;
+  margin: 35px 50px;
+  font-family: BenchNine, serif;
+}
+h2 {
+  padding-top: 70px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-family: BenchNine, serif;
+}
+h3 {
+  color: #666;
+  text-align: left;
+  margin: 10px 10px;
+  font-family: BenchNine, serif;
+}
+.text {
+  color: white;
+  text-align: center;
+}
+p {
+  padding: 10px 35px;
+}
+img {
+  padding-left: 45px;
+  width: 85%;
+}
+.hidden {
+  visibility:hidden;
+} 
+header {
+  height: 110px;
+}
+#contact {
+  min-width: 40%;
+  height: 110px;
+  border: 0;
+}
+#contact h2 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/********** Hexagons by James Tauber http://jtauber.github.io/articles/css-hexagon.html **********/
+
+.hex {
+  float: left;
+  margin-left: 50px;
+  margin-bottom: -60px;
+}
+.hex .top-green {
+  width: 0;
+  border-bottom: 90px solid #94BA65;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex .middle-green {
+  width: 312px;
+  height: 180px;
+  background: #94BA65;
+}
+.hex .bottom-green {
+  width: 0;
+  border-top: 90px solid #94BA65;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex .top-blue {
+  width: 0;
+  border-bottom: 90px solid #2B4E72;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex .middle-blue {
+  width: 312px;
+  height: 180px;
+  background: #2B4E72;
+}
+.hex .bottom-blue {
+  width: 0;
+  border-top: 90px solid #2B4E72;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex .top-teal {
+  width: 0;
+  border-bottom: 90px solid #2790B0;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex .middle-teal {
+  width: 312px;
+  height: 180px;
+  background: #2790B0;
+}
+.hex .bottom-teal {
+  width: 0;
+  border-top: 90px solid #2790B0;
+  border-left: 156px solid transparent;
+  border-right: 156px solid transparent;
+}
+.hex-row {
+  clear: left;
+}
+.hex-row.even {
+  margin-left: 175px;
+}
+
+/********** Flip from David Walsh http://davidwalsh.name/css-flip **********/
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
 
 /********** Social Bar **********/
 
-
 #social {
-    position: absolute;
-    top: 70px;
-    right: 10%;
-    width: auto;
-    z-index: 1;
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  width: auto;
+  z-index: 1;
 }
 
 i {
-    font-size: 35px;
-    margin: 5px;
+  font-size: 35px;
+  margin: 5px;
 }
 
 a {
-    color: #666;
-    text-decoration: none;
+  color: #666;
+  text-decoration: none;
 }
 
 /********** Form **********/
 
 input, textarea {
-    display: inline-block;
-    width: 65%;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 3px 5px #ccc;
-    border: 1px solid #ccc;
-    color: #666;
+  display: inline-block;
+  width: 65%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+  color: #666;
 }
 
 input[type="submit"] {
-    margin-left: 15px;
-    width: 75px;
-    background: #666;
-    color: white;
-    border-radius: 25px;
-    border: 0;
+  margin-left: 15px;
+  width: 75px;
+  background: #666;
+  color: white;
+  border-radius: 25px;
+  border: 0;
 }
 
 form {
-    font-family: Pompiere, serif;
-    padding-left: 10px;
-    font-size: 20px;
-    color: #666;
+  font-family: BenchNine, serif;
+  padding-left: 10px;
+  font-size: 20px;
+  color: #666;
 }
 
 .thanks {
     margin: 20px;
 }
 
-#dynamite > img {
-    padding-left: 70px; 
-    padding-right: 70px; 
-    background-color: black
+.project {
+  border: 7px solid white;
+  display: inline-block;
+  clear: both;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  margin-top: 75px;
+  background: white;
+  box-shadow: 10px 10px 15px #888888;
+  width: 95%;
 }
-

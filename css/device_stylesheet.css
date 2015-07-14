@@ -1,52 +1,49 @@
 /********** Device Styles **********/
 @media only screen and (max-width: 900px) {
-
-        #social {
-            position: fixed;
-            top: 50px;
-            width: 40px;
-            z-index: 1;
-        }
-
+    #social {
+        position: fixed;
+        top: 50px;
+        width: 40px;
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 660px) {
+    header {
+        height: 90px;
+    }
 
-        header {
-            height: 90px;
-        }
+    .project {
+        border: 5px solid white;
+        margin-left: 35px;
+    } 
 
-        .project {
-            border: 5px solid white;
-            height: 150px;
-            margin-left: 50px;
-        }
+    #dynamite > img {
+        padding-left: 55px; 
+        padding-right: 55px; 
+        background-color: black
+    }
 
-        img {
-            height: 100px;
-            margin-bottom: 0;
-        }   
+    h1 {
+        font-size: 50px;
+    }
 
-        #dynamite > img {
-            padding-left: 55px; 
-            padding-right: 55px; 
-            background-color: black
-        }
+    h2 {
+        font-size: 22px;
+    }
 
-        h1 {
-            font-size: 50px;
-        }
-
-        h2 {
-            font-size: 22px;
-        }
-
-        i {
-            font-size: 30px;
-        }
-        #contact {
-            height: 100px;
-        }
+    i {
+        font-size: 30px;
+    }
+    #contact {
+        height: 100px;
+    }
+    .hex-row.even {
+      margin-left: 0px;
+    }
+    .hex-row {
+      margin-left: 0px;
+    }
 }
 
 /**
@@ -54,32 +51,30 @@
  */
 @media only screen and (max-width: 480px) {
 
-        #social {
-            top: 0;
-            width: auto;
-            left: 50px;
-            position: relative;
-            float: left;
-        }
+    #social {
+        top: 0;
+        width: auto;
+        left: 50px;
+        position: relative;
+        float: left;
+    }
 
-        i {
-            color: white;
-        }
+    i {
+        color: white;
+    }
 
-        #contact {
-            height: 0;
-        }
+    #contact {
+        height: 0;
+    }
 
-        #contact form {
-            display: none;
-        }
-            
-        #contact h2 {
-            display: none;
-        }
-        h2 {
-            padding-top: 5px;
-        }
+    #contact form {
+        display: none;
+    }
+        
+    #contact h3 {
+        display: none;
+    }
+
 }
 
 /**
@@ -102,10 +97,6 @@
     h1 {
         margin: 20px 25px 0px 25px;
         font-size: 40px;
-    }
-
-    img {
-        height: 80px;
     }   
 
     #dynamite > img {
@@ -117,7 +108,6 @@
     #social {
         left: 25px;
     }
-
 }
 
 /**
