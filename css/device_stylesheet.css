@@ -75,6 +75,15 @@
         display: none;
     }
 
+    .hex-row.even {
+      margin-left: -25px;
+    }
+    .hex-row {
+      margin-left: -25px;
+    }
+    .back {
+        display: none;
+    }
 }
 
 /**
