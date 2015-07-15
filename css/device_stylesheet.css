@@ -1,122 +1,152 @@
 /********** Device Styles **********/
-@media only screen and (max-width: 900px) {
-    #social {
-        position: fixed;
-        top: 50px;
-        width: 40px;
-        z-index: 1;
-    }
+@media only screen and (max-width: 1250px) {
+  #last-even-hex {
+    margin-left: 232px;
+  }
+  #contact {
+    width: 90%;
+  }
 }
 
-@media only screen and (max-width: 660px) {
-    header {
-        height: 90px;
-    }
+@media only screen and (max-width: 1100px) {
+  #last-hex {
+    position: absolute;
+    left: 0px;
+    top: 748px;
+  }
 
-    .project {
-        border: 5px solid white;
-        margin-left: 35px;
-    } 
+  #social {
+    position: fixed;
+    top: 50px;
+    width: 40px;
+    z-index: 1;
+  }
+}
 
-    #dynamite > img {
-        padding-left: 55px; 
-        padding-right: 55px; 
-        background-color: black
-    }
+@media only screen and (max-width: 900px) {
+  #social {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    width: auto;
+    z-index: 1;
+  }
+  .hex .top-green {
+    width: 312px;
+    border-bottom: 45px solid #94BA65;
+    border-left: 45px solid #94BA65;
+    border-right: 45px solid #94BA65;
+  }
 
-    h1 {
-        font-size: 50px;
-    }
+  .hex .bottom-green {
+    width: 312px;
+    border-top: 45px solid #94BA65;
+    border-left: 45px solid #94BA65;
+    border-right: 45px solid #94BA65;
+    border-bottom: 45px solid #94BA65;
+  }
 
-    h2 {
-        font-size: 22px;
-    }
+  .hex .top-blue {
+    width: 312px;
+    border-bottom: 45px solid #2B4E72;
+    border-left: 45px solid #2B4E72;
+    border-right: 45px solid #2B4E72;
+  }
 
-    i {
-        font-size: 30px;
-    }
-    #contact {
-        height: 100px;
-    }
-    .hex-row.even {
-      margin-left: 0px;
-    }
-    .hex-row {
-      margin-left: 0px;
-    }
+  .hex .bottom-blue {
+    width: 312px;
+    border-top: 45px solid #2B4E72;
+    border-left: 45px solid #2B4E72;
+    border-right: 45px solid #2B4E72;
+    border-bottom: 45px solid #2B4E72;
+  }
+  
+  .hex .top-teal {
+    width: 312px;
+    border-bottom: 45px solid #2790B0;
+    border-left: 45px solid #2790B0;
+    border-right: 45px solid #2790B0;
+  }
+
+  .hex .bottom-teal {
+    width: 312px;
+    border-top: 45px solid #2790B0;
+    border-left: 45px solid #2790B0;
+    border-right: 45px solid #2790B0;
+    border-bottom: 45px solid #2790B0;
+  }
+  #last-hex {
+    top: 510px;
+  }
+  .hex-row {
+    margin-left: 0px;
+  }
+  .hex-row .hex {
+    margin-bottom: 50px;
+  }
+  #first-even-hex {
+    position: absolute;
+    left: 0px;
+    top: 875px;
+  }
+  #middle-even-hex {
+    margin-left: 235px;
+  }
+  #contact {
+    width: 85%;
+    margin-top: -25px;
+  } 
 }
 
 /**
- * Smartphone Landscape: 480px
- */
+* Change widths to a percentage
+*/
+@media only screen and (max-width: 725px) {
+
+  #last-hex {
+    position: absolute;
+    left: 0px;
+    top: 1960px;
+  }
+  #last-even-hex {
+    position: absolute;
+    left: -180px;
+    top: 1240px;
+  }
+  #first-even-hex {
+    top: 875px;
+  }
+  #middle-even-hex {
+    position: absolute;
+    left: -185px;
+    top: 1600px;
+  }
+  #contact {
+    position: absolute;
+    border: 5px solid white;
+    margin-left: 38px;
+    top: 2375px;
+  } 
+  #social {
+    position: absolute;
+    top: 2300px;
+    left: 45px;
+  }
+}
+
+/**
+* Smartphone Landscape: 480px
+*/
 @media only screen and (max-width: 480px) {
 
-    #social {
-        top: 0;
-        width: auto;
-        left: 50px;
-        position: relative;
-        float: left;
-    }
+  #contact {
+    display: none;
+  }
 
-    i {
-        color: white;
-    }
+  .back {
+    display: none;
+  }
 
-    #contact {
-        height: 0;
-    }
-
-    #contact form {
-        display: none;
-    }
-        
-    #contact h3 {
-        display: none;
-    }
-
-    .hex-row.even {
-      margin-left: -25px;
-    }
-    .hex-row {
-      margin-left: -25px;
-    }
-    .back {
-        display: none;
-    }
-}
-
-/**
- * Smartphone Portrait: 400px
- */
-
-@media only screen and (max-width: 400px) {
-
-    .project {
-        margin-left: 25px;
-        height: 125px;
-        margin-bottom: 15px;
-    }
-
-    header {
-        height: 60px;
-        margin-bottom: 0;
-    }
-
-    h1 {
-        margin: 20px 25px 0px 25px;
-        font-size: 40px;
-    }   
-
-    #dynamite > img {
-        padding-left: 45px; 
-        padding-right: 45px; 
-        background-color: black
-    }
-
-    #social {
-        left: 25px;
-    }
 }
 
 /**
