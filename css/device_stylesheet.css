@@ -139,6 +139,48 @@
 */
 @media only screen and (max-width: 480px) {
 
+  h1 {
+    font-size: 48px;
+    margin-left: 25px;
+    padding-top: 10px;
+  }
+  .hex {
+    margin-left: 25px;
+  }
+  .hex .top-green {
+    width: 275px;
+  }
+  .hex .middle-green {
+    width: 275px;
+  }
+  .hex .bottom-green {
+    width: 275px;
+  }
+  .hex .top-blue {
+    width: 275px;
+  }
+  .hex .middle-blue {
+    width: 275px;
+  }
+  .hex .bottom-blue {
+    width: 275px;
+  }
+  
+  .hex .top-teal {
+    width: 275px;
+  }
+  .hex .middle-teal {
+    width: 275px;
+  }
+  .hex .bottom-teal {
+    width: 275px;
+  }
+  #last-even-hex {
+    left: -208px;
+  }
+  #middle-even-hex {
+    left: -210px;
+  }
   #contact {
     display: none;
   }
