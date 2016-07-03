@@ -1,20 +1,25 @@
 /********** Device Styles **********/
 @media only screen and (max-width: 1250px) {
-  #last-even-hex {
-    margin-left: 232px;
-  }
-  #contact {
-    width: 90%;
+  .row-2 {
+    margin-left: 0px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
   #last-hex {
-    position: absolute;
+    position: relative;
     left: 0px;
-    top: 748px;
+    top: 0px;
   }
+  #last-even-hex {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-left: 50px;
+  }
+}
 
+@media only screen and (max-width: 725px) {
   #social {
     position: fixed;
     top: 50px;
@@ -23,178 +28,105 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
-  #social {
-    position: absolute;
-    top: 70px;
-    right: 10%;
-    width: auto;
-    z-index: 1;
-  }
-  .hex .top-green {
-    width: 312px;
-    border-bottom: 45px solid #94BA65;
-    border-left: 45px solid #94BA65;
-    border-right: 45px solid #94BA65;
-  }
-
-  .hex .bottom-green {
-    width: 312px;
-    border-top: 45px solid #94BA65;
-    border-left: 45px solid #94BA65;
-    border-right: 45px solid #94BA65;
-    border-bottom: 45px solid #94BA65;
-  }
-
-  .hex .top-blue {
-    width: 312px;
-    border-bottom: 45px solid #2B4E72;
-    border-left: 45px solid #2B4E72;
-    border-right: 45px solid #2B4E72;
-  }
-
-  .hex .bottom-blue {
-    width: 312px;
-    border-top: 45px solid #2B4E72;
-    border-left: 45px solid #2B4E72;
-    border-right: 45px solid #2B4E72;
-    border-bottom: 45px solid #2B4E72;
-  }
-  
-  .hex .top-teal {
-    width: 312px;
-    border-bottom: 45px solid #2790B0;
-    border-left: 45px solid #2790B0;
-    border-right: 45px solid #2790B0;
-  }
-
-  .hex .bottom-teal {
-    width: 312px;
-    border-top: 45px solid #2790B0;
-    border-left: 45px solid #2790B0;
-    border-right: 45px solid #2790B0;
-    border-bottom: 45px solid #2790B0;
-  }
-  #last-hex {
-    top: 510px;
-  }
-  .hex-row {
-    margin-left: 0px;
-  }
-  .hex-row .hex {
-    margin-bottom: 50px;
-  }
-  #first-even-hex {
-    position: absolute;
-    left: 0px;
-    top: 875px;
-  }
-  #middle-even-hex {
-    margin-left: 235px;
-  }
-  #contact {
-    width: 85%;
-    margin-top: -25px;
-  } 
-}
-
-/**
-* Change widths to a percentage
-*/
-@media only screen and (max-width: 725px) {
-
-  #last-hex {
-    position: absolute;
-    left: 0px;
-    top: 1960px;
-  }
-  #last-even-hex {
-    position: absolute;
-    left: -180px;
-    top: 1240px;
-  }
-  #first-even-hex {
-    top: 875px;
-  }
-  #middle-even-hex {
-    position: absolute;
-    left: -185px;
-    top: 1600px;
-  }
-  #contact {
-    position: absolute;
-    border: 5px solid white;
-    margin-left: 38px;
-    top: 2375px;
-  } 
-  #social {
-    position: absolute;
-    top: 2300px;
-    left: 45px;
-  }
-}
-
 /**
 * Smartphone Landscape: 480px
 */
 @media only screen and (max-width: 480px) {
-
-  h1 {
-    font-size: 48px;
-    margin-left: 25px;
-    padding-top: 10px;
-  }
   .hex {
     margin-left: 25px;
   }
+  #last-even-hex {
+    margin-left: 25px;
+  }
   .hex .top-green {
-    width: 275px;
+    width: 0;
+    border-bottom: 80px solid #94BA65;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
   .hex .middle-green {
-    width: 275px;
+    width: 280px;
+    height: 160px;
+    background: #94BA65;
   }
   .hex .bottom-green {
-    width: 275px;
+    width: 0;
+    border-top: 80px solid #94BA65;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
   .hex .top-blue {
-    width: 275px;
+    width: 0;
+    border-bottom: 80px solid #2B4E72;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
   .hex .middle-blue {
-    width: 275px;
+    width: 280px;
+    height: 160px;
+    background: #2B4E72;
   }
   .hex .bottom-blue {
-    width: 275px;
+    width: 0;
+    border-top: 80px solid #2B4E72;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
-  
   .hex .top-teal {
-    width: 275px;
+    width: 0;
+    border-bottom: 80px solid #2790B0;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
   .hex .middle-teal {
-    width: 275px;
+    width: 280px;
+    height: 160px;
+    background: #2790B0;
   }
   .hex .bottom-teal {
-    width: 275px;
-  }
-  #last-even-hex {
-    left: -208px;
-  }
-  #middle-even-hex {
-    left: -210px;
-  }
-  #contact {
-    display: none;
+    width: 0;
+    border-top: 80px solid #2790B0;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
   }
 
+  h1 {
+    font-size: 56px;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 22px;
+    padding-top: 65px;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .flip-container:hover .back {
+    transform: rotateY(0deg);
+  }
+  .flip-container:hover .front {
+    transform: rotateY(0deg);
+  }
   .back {
     display: none;
   }
 
+  #social {
+    position: absolute;
+    top: 1800px;
+    left: 25px;
+    width: auto;
+    z-index: 1;
+  }
 }
 
 /**
  * Printer
  */
-
 @media print {
 	*, h1, h2, h3, h4, h5, h6, p, a, section, div, table {
 		color: black;
