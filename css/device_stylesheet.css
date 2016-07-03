@@ -3,6 +3,10 @@
   .row-2 {
     margin-left: 0px;
   }
+  .hex {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
