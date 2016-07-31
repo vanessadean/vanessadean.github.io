@@ -195,3 +195,7 @@ a {
 .back {
   transform: rotateY(-180deg);
 }
+
+#first-even-hex .back {
+  padding-left: 25px;
+}
