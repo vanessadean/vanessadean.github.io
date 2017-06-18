@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=BenchNine);
 @import url(http://fonts.googleapis.com/css?family=BenchNine);
 
-/********** Social Bar **********/
-
 *   {
     margin: 0;
     padding: 0;
@@ -24,7 +22,7 @@
 /********** Styles *********r;*/
 
 .wrapper {
-  max-width: 1500px;
+  max-width: 1000px;
 }
 body {
   font: sans-serif, helvetica;
@@ -135,7 +133,7 @@ header {
 #social {
   position: absolute;
   top: 70px;
-  right: 10%;
+  left: 770px;
   width: auto;
   z-index: 1;
 }

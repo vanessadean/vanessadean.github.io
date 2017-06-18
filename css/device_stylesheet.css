@@ -21,14 +21,28 @@
     top: 0px;
     margin-left: 50px;
   }
-}
-
-@media only screen and (max-width: 725px) {
   #social {
     position: fixed;
     top: 50px;
     width: 40px;
+    right: 600px;
     z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #social {
+    position: absolute;
+    top: 900px;
+    left: 40px;
+    width: 500px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  #social {
+    top: 1600px;
   }
 }
 
@@ -36,6 +50,10 @@
 * Smartphone Landscape: 480px
 */
 @media only screen and (max-width: 480px) {
+  #social {
+    left: 22px;
+    top: 1450px;
+  }
   .hex {
     margin-left: 25px;
   }
@@ -117,14 +135,6 @@
   }
   .back {
     display: none;
-  }
-
-  #social {
-    position: absolute;
-    top: 2100px;
-    left: 25px;
-    width: auto;
-    z-index: 1;
   }
 }
 
