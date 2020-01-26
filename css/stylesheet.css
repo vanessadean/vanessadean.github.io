@@ -105,6 +105,9 @@ header {
   height: 180px;
   background: #2B4E72;
 }
+.hex .middle-blue .front {
+  padding-top: 20px;
+}
 .hex .bottom-blue {
   width: 0;
   border-top: 90px solid #2B4E72;
