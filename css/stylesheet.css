@@ -60,6 +60,9 @@ img {
 header {
   height: 110px;
 }
+.title {
+  margin-top: 110px;
+}
 
 /********** Hexagons by James Tauber http://jtauber.github.io/articles/css-hexagon.html **********/
 
